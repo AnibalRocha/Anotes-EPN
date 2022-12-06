@@ -94,3 +94,61 @@ public class probando {
 ` para correr por consola de bash `
 - javac src/NombreArchoivo.java
 - java src/NombreArchivo.java
+
+# clases y programas en java
+```c
+import java.util.Scanner;
+
+/*
+ * @autor : luis
+ * @date : 06.12.22
+ * @version: ...
+ * Determinar el area de un rectangulo
+*/
+public class App {
+    /*
+     * Programa pricnipal
+     * @param args; no requiere
+     * @throws Exception
+    */
+    public static void main(String[] args){
+        //calcularAreaRect();
+        //showSignosExt();
+        
+    }
+
+    private static void showSignosExt() {
+        int nroTerminos=0;
+        Scanner sc= new Scanner(System.in);
+        System.out.print("ingrese nro.Terminos:");
+        nroTerminos = sc.nextInt();
+        
+        for (int i=0; i < nroTerminos; i++){
+            //if (i%2==0)
+                System.out.print((i%2==0)?"+ ":"- ");
+            //else
+
+            //System.out.print("- ");
+        }
+        sc.close();
+    }
+
+    private static void calcularAreaRect() {
+        //Declarar la varibale e iniciacion
+        int longitud =0, ancho =0 , areaRect=0;
+        Scanner sc= new Scanner(System.in);
+
+        System.out.println("ingrese la longitud");
+        longitud = sc.nextInt();
+
+        System.out.println("Ingrese el ancho:");
+        ancho = sc.nextInt();
+
+        areaRect = ancho*longitud;
+
+        System.out.println("El area es:" + areaRect);
+        sc.close();
+    }
+}
+// deber 
+```
